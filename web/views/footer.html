@@ -1,0 +1,160 @@
+<!-- Footer -->
+<div class="footer w3ls">
+    <div class="container">
+        <div class="newsletter-agile">
+            <form action="#" method="post">
+                <p>Subscribe to feeds!</p>
+                <input type="email" name="email" size="30" required="" placeholder="Enter your email here...">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+        <div class="footer-main">
+            <div class="footer-top">
+                <div class="col-md-4 ftr-grid fg1">
+                    <h3><a href="/"><span>ARO </span> Fablab</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+                <div class="col-md-4 ftr-grid fg2 mid-gd">
+                    <h3>Our Address</h3>
+                    <div class="ftr-address">
+                        <div class="local">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="ftr-text">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="ftr-address">
+                        <div class="local">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="ftr-text">
+                            <p>+1 (512) 154 8176</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="ftr-address">
+                        <div class="local">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="ftr-text">
+                            <p><a href="mailto:info@example.com">info@example.com</a></p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftr-grid fg2">
+                    <h3>Keep In Touch With Us</h3>
+                    <div class="right-w3l">
+                        <ul class="top-links">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="right-w3-2">
+                        <ul class="text-w3">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Google</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="copyrights">
+                <p>&copy; 2017 Aro Fablab. All Rights Reserved | Theme by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!--pop-up-box -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+    });
+</script>
+<!-- //pop-up-box -->
+
+<!-- //js -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+
+<script src="js/jzBox.js"></script>
+
+<!-- Countdown-Timer-JavaScript -->
+<script src="js/simplyCountdown.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 948 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    // inline example
+    simplyCountdown('.simply-countdown-inline', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        inline: true
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+<!-- //Countdown-Timer-JavaScript -->
+
+<!-- smooth scrolling -->
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+    });
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
