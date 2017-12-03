@@ -4,7 +4,8 @@
         "monolog/monolog": "^1.22",
         "twig/twig": "^2.0",
         "symfony/twig-bridge": "^3",
-        "swiftmailer/swiftmailer": "^6.0"
+        "swiftmailer/swiftmailer": "^6.0",
+        "africastalking/africastalking": "*"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"
