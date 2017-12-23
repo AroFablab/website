@@ -22,6 +22,10 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+$app->get('/members', function() use($app) {
+  $app['monolog']->addDebug('logging memebrs page.');
+  return $app['twig']->render('member.twig');
+});
 // https://swiftmailer.symfony.com/docs/introduction.html
 
 $app->run();
