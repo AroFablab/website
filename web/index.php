@@ -5,16 +5,16 @@ require('../vendor/autoload.php');
 $app = new Silex\Application();
 $app['debug'] = true;
 
-$app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
-  $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) use ($app) {
-      return sprintf('%s/%s', trim($app['request']->getBasePath()), ltrim($asset, '/'));
-  }));
-  return $twig;
-}));
+// $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+//   $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) use ($app) {
+//       return sprintf('%s/%s', trim($app['request']->getBasePath()), ltrim($asset, '/'));
+//   }));
+//   return $twig;
+// }));
 
-$app->before(function ($request) use ($app) {
-    $app['twig']->addGlobal('active', $request->get("_route"));
-});
+// $app->before(function ($request) use ($app) {
+//     $app['twig']->addGlobal('active', $request->get("_route"));
+// });
 
 // Register the monolog logging service
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
