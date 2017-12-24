@@ -12,7 +12,7 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 
 // Register view rendering
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
+    'twig.path' => __DIR__.'/views', __DIR__.'/views/members',
 ));
 
 // Our web handlers
@@ -24,7 +24,7 @@ $app->get('/', function() use($app) {
 
 $app->get('/membership', function() use($app) {
   $app['monolog']->addDebug('logging members page.');
-  return $app['twig']->render('/members/members.twig');
+  return $app['twig']->render('members.twig');
 });
 // https://swiftmailer.symfony.com/docs/introduction.html
 
