@@ -1,6 +1,6 @@
 {
     "name": "Aro Fablab Main Site",
     "description": "Aro Fablab",
-    "repository": "https://github.com/heroku/php-getting-started",
+    "repository": "https://github.com/AroFablab/website.git",
     "addons": []
 }
