@@ -8,6 +8,6 @@
         "africastalking/africastalking": "*"
     },
     "require-dev": {
-        "heroku/heroku-buildpack-php": "*"
+        "heroku/heroku-buildpack-php": "dev-master"
     }
 }
