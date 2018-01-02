@@ -2,6 +2,7 @@
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteRule ^ index.php [QSA,L]
 <IfModule mod_rewrite.c>
+    RedirectMatch permanent ^/index\.php/(.*) /$1
     Options -MultiViews
 
     RewriteEngine On
